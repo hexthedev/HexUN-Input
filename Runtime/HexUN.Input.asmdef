@@ -1,0 +1,17 @@
+{
+    "name": "HexUN.Input",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:e6cf7a9d4b86ecd45b8095fc035e5353",
+        "GUID:f5eab7ae485a28e4f9fdd568c21c4a83"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

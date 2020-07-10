@@ -1,0 +1,24 @@
+{
+  "Namespaces": [
+    "UnityEngine"
+  ],
+  "Namespace": "HexUN.Systems.Pawn",
+  "Name": "PTSideScrollerPawn",
+  "Data": [
+    "Jump",
+    "Dash",
+    "Move"
+  ],
+  "Commands": [
+    {
+      "Name": "Jump"
+    },
+    {
+      "Name": "Dash"
+    },
+    {
+      "Name": "Move",
+      "Paras": "Vector2 move"
+    }
+  ]
+}

@@ -1,18 +1,18 @@
 {
   "Tokens": [
     {
-      "Path": "Dependencies/HexUN/Systems/Runtime/Input/Providers/Pointer/_events/EPointerEvent.event",
+      "Path": "Dependencies/HexUN-Input/Runtime/Providers/Pointer/_events/EPointerEvent.event",
       "Type": "EPointerEvent",
-      "Namespace": "HexUN.Systems.Input",
-      "MenuPath": "HexUN/Systems/Input/Pointer/Events",
-      "EventTypeNamespace": "HexUN.Systems.Input"
+      "Namespace": "HexUN.Input",
+      "MenuPath": "HexUN/Input/Pointer/Events",
+      "EventTypeNamespace": "HexUN.Input"
     },
     {
-      "Path": "Dependencies/HexUN/Systems/Runtime/Input/Providers/Hoverable/_events/EHoverableEvent.event",
+      "Path": "Dependencies/HexUN-Input/Runtime/Providers/Hoverable/_events/EHoverableEvent.event",
       "Type": "EHoverableEvent",
-      "Namespace": "HexUN.Systems.Input",
-      "MenuPath": "HexUN/Systems/Input/Pointer/Events",
-      "EventTypeNamespace": "HexUN.Systems.Input"
+      "Namespace": "HexUN.Input",
+      "MenuPath": "HexUN/Input/Pointer/Events",
+      "EventTypeNamespace": "HexUN.Input"
     }
   ]
 }   

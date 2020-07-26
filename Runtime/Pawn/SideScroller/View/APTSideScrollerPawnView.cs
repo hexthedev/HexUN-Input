@@ -2,7 +2,7 @@ using UnityEngine;
 using HexUN.MonoB;
 using HexUN.Patterns;
 using HexUN.Deps;
-using TobiasCSStandard.Core;
+using HexCS.Core;
 
 namespace HexUN.Pawn
 {

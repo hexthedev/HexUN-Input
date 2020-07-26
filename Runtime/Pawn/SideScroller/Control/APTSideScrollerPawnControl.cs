@@ -1,6 +1,6 @@
 using UnityEngine;
 using HexUN.Patterns;
-using TobiasCSStandard.Core;
+using HexCS.Core;
 using Vector2 = UnityEngine.Vector2;
 
 namespace HexUN.Pawn

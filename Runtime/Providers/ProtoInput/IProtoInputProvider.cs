@@ -1,4 +1,4 @@
-﻿using TobiasCSStandard.Core;
+﻿using HexCS.Core;
 using UnityEngine;
 
 using Vector2 = UnityEngine.Vector2;

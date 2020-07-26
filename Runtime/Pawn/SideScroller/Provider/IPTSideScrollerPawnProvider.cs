@@ -1,4 +1,4 @@
-using TobiasCSStandard.Core;
+using HexCS.Core;
 using HexUN.Patterns;
 using UnityEngine;
 

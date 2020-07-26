@@ -1,4 +1,4 @@
-﻿using TobiasCSStandard.Core;
+﻿using HexCS.Core;
 using HexUN.Physics2D;
 using Vector2 = UnityEngine.Vector2;
 

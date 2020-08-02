@@ -9,7 +9,7 @@ namespace HexUN.Pawn
     /// <summary>
     /// Controls a SideScrollerPawn with a Rigidbody2D
     /// </summary>
-    public class PTSideScrollerPawnViewRb2 : APTSideScrollerPawnView
+    public class PTSideScrollerPawnViewRb2 : MonoBehaviour
     {
         [Header("Dependencies (PTSideScrollerPawnViewRb2)")]
         [SerializeField]
@@ -27,7 +27,12 @@ namespace HexUN.Pawn
 
         [Header("Options")]
         [SerializeField]
-        private float _moveSpeed = 10;
+        private float _moveAcceleration = 0.2f;
+        [SerializeField]
+        private float _moveMaxVelocity = 2;
+        [SerializeField]
+        [Tooltip("multiple move result. Can be used to remove y axis from move")]
+        private Vector3 _moveMask;
         [SerializeField]
         private float _dashForce = 100;
         [SerializeField]
@@ -57,13 +62,13 @@ namespace HexUN.Pawn
 
         private bool _isOnWall => _isOnLeftWall || _isOnRightWall;
 
-        public override void HandleDash(CVCommand command)
+        public void HandleDash()
         {
             ResolveSensors();
             _rb2d.AddForce(new Vector2(Mathf.Sign(_lastMove.x), 0) * _dashForce, ForceMode2D.Force );
         }
 
-        public override void HandleJump(CVCommand command)
+        public void HandleJump()
         {
             ResolveSensors();
 
@@ -80,12 +85,15 @@ namespace HexUN.Pawn
             _jumpTimer = StartCoroutine(JumpTimer());
         }
 
-        public override void HandleMove(CVCommand command)
+        public void HandleMove(Vector2 move)
         {
-            if (!command.TryGet(out Vector2 vec)) return;
             ResolveSensors();
-            _rb2d.velocity += vec * _moveSpeed;
-            _lastMove = vec;
+
+            Vector2 newVelo = _rb2d.velocity + (move * _moveAcceleration * Time.deltaTime * _moveMask);
+            if (newVelo.magnitude > _moveMaxVelocity) newVelo = newVelo.normalized * _moveMaxVelocity;
+
+            _rb2d.velocity = newVelo;
+            _lastMove = move;
         }
 
         private void ResolveSensors()
@@ -105,8 +113,8 @@ namespace HexUN.Pawn
         {
             foreach (Raycast2DSensor s in sensors)
             {
-                RaycastHit2D hit = s.Sense();
-                if (hit.collider != null)
+                RaycastHit2D[] hit = s.Sense();
+                if (hit.Length != 0)
                 {
                     flag = true;
                     return;

@@ -8,7 +8,7 @@ namespace HexUN.Input
     /// <inheritdoc/>
     public abstract class APointerProvider : MonoEnhanced, IPointerProvider
     {
-        [Header("Emissions")]
+        [Header("Emissions (APointerProvider)")]
         [SerializeField]
         protected VoidReliableEvent OnClick = null;
 

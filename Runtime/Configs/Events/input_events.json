@@ -11,8 +11,15 @@
       "Path": "Dependencies/HexUN-Input/Runtime/Providers/Hoverable/_events/EHoverableEvent.event",
       "Type": "EHoverableEvent",
       "Namespace": "HexUN.Input",
-      "MenuPath": "HexUN/Input/Pointer/Events",
+      "MenuPath": "HexUN/Input/Hover/Events",
       "EventTypeNamespace": "HexUN.Input"
+    },
+    {
+      "Path": "Dependencies/HexUN-Input/Runtime/Providers/Drag/_events/PointerEventData.event",
+      "Type": "PointerEventData",
+      "Namespace": "HexUN.Input",
+      "MenuPath": "HexUN/Input/Drag/Events",
+      "EventTypeNamespace": "UnityEngine.EventSystems"
     }
   ]
 }   

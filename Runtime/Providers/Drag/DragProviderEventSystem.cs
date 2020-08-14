@@ -1,4 +1,5 @@
-﻿using UnityEngine.EventSystems;
+﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace HexUN.Input
 {
@@ -6,7 +7,7 @@ namespace HexUN.Input
     {
         public void OnBeginDrag(PointerEventData eventData)
         {
-            OnBeginDragDraggable.Invoke(eventData.position);
+            OnBeginDragDraggable.Invoke(eventData);
             State = EDragState.Begin;
         }
 
@@ -14,14 +15,14 @@ namespace HexUN.Input
         {
             if (eventData.dragging)
             {
-                OnDragDraggable.Invoke(eventData.position);
+                OnDragDraggable.Invoke(eventData);
                 State = EDragState.Dragging;
             }
         }
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            OnDropDraggable.Invoke(eventData.position);
+            OnDropDraggable.Invoke(eventData);
             State = EDragState.Idle;
         }
     }

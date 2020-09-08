@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using HexUN.Patterns;
 using HexUN.Physics2D;
 using HexUN.Temporal;
 using UnityEngine;

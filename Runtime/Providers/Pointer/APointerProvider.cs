@@ -10,7 +10,7 @@ namespace HexUN.Input
     {
         [Header("Emissions (APointerProvider)")]
         [SerializeField]
-        protected VoidReliableEvent OnClick = null;
+        protected VoidReliableEvent OnClickEvent = null;
 
         [SerializeField]
         protected EPointerEventReliableEvent OnPointerEvent = null;
@@ -23,6 +23,9 @@ namespace HexUN.Input
         #region API
         /// <inheritdoc/>
         public IEventSubscriber<EPointerEvent> OnPointer => OnPointerEvent;
+
+        /// <inheritdoc/>
+        public IEventSubscriber OnClick => OnClickEvent;
 
         /// <inheritdoc/>
         public EPointerEvent LastPointerEvent => _lastEvent;
@@ -44,7 +47,7 @@ namespace HexUN.Input
         protected virtual void OnValidate()
         {
             OnPointerEvent.Invoke(_lastEvent);
-            if (_lastEvent == EPointerEvent.Click) OnClick.Invoke();
+            if (_lastEvent == EPointerEvent.Click) OnClickEvent.Invoke();
         }
     }
 }

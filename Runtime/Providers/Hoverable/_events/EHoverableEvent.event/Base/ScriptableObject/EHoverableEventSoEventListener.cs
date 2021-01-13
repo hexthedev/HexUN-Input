@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace HexUN.Input
 {
-   [AddComponentMenu("HexUN/Input/Pointer/Events/EHoverableEvent/EHoverableEventSoEventListener")]
+   [AddComponentMenu("HexUN/Input/Hover/Events/EHoverableEvent/EHoverableEventSoEventListener")]
    public class EHoverableEventSoEventListener : ScriptableObjectEventListener<EHoverableEvent, EHoverableEventSoEvent, EHoverableEventUnityEvent>
    {
    }

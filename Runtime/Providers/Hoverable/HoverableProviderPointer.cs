@@ -36,7 +36,7 @@ namespace HexUN.Input.Hoverable
 
         private void HandlePointerEvent(EPointerEvent pointerEvent)
         {
-#if TOBIAS_DEBUG
+#if HEXDB
             if (Log != null) Log.Invoke($"Hoverable on gameobject {gameObject} logged event {pointerEvent}");
 #endif
 

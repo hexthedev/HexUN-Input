@@ -2,7 +2,8 @@
     "name": "HexUN.Input",
     "references": [
         "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:f5eab7ae485a28e4f9fdd568c21c4a83"
+        "GUID:f5eab7ae485a28e4f9fdd568c21c4a83",
+        "GUID:c9c783d9d722e7447a47c6b0da9d55fd"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

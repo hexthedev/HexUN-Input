@@ -37,7 +37,7 @@ namespace HexUN.Input
         /// <param name="eventData"></param>
         public void OnPointerClick(PointerEventData eventData){
             OnPointerEvent?.Invoke(EPointerEvent.Click);
-            OnClick?.Invoke();
+            OnClickEvent?.Invoke();
         }
     }
 }

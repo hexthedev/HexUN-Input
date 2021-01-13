@@ -1,7 +1,7 @@
 ﻿using HexCS.Core;
-using HexUN.Events;
 using HexUN.MonoB;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace HexUN.Input
 {
@@ -9,13 +9,13 @@ namespace HexUN.Input
     {
         [Header("Emissions (ADragProvider)")]
         [SerializeField]
-        protected Vector2ReliableEvent OnBeginDragDraggable = null;
+        protected PointerEventDataReliableEvent OnBeginDragDraggable = null;
 
         [SerializeField]
-        protected Vector2ReliableEvent OnDropDraggable = null;
+        protected PointerEventDataReliableEvent OnDropDraggable = null;
 
         [SerializeField]
-        protected Vector2ReliableEvent OnDragDraggable = null;
+        protected PointerEventDataReliableEvent OnDragDraggable = null;
 
         [Header("Debugging (ADragProvider)")]
         [SerializeField]
@@ -23,13 +23,13 @@ namespace HexUN.Input
 
         #region API
         /// <inheritdoc/>
-        public IEventSubscriber<UnityEngine.Vector2> OnBeginDragFrame => OnBeginDragDraggable;
+        public IEventSubscriber<PointerEventData> OnBeginDragFrame => OnBeginDragDraggable;
 
         /// <inheritdoc/>
-        public IEventSubscriber<UnityEngine.Vector2> OnDropFrame => OnDropDraggable;
+        public IEventSubscriber<PointerEventData> OnDropFrame => OnDropDraggable;
 
         /// <inheritdoc/>
-        public IEventSubscriber<UnityEngine.Vector2> OnDragFrame => OnDragDraggable;
+        public IEventSubscriber<PointerEventData> OnDragFrame => OnDragDraggable;
 
         /// <inheritdoc/>
         public EDragState LastDragState => State;

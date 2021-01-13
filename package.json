@@ -2,7 +2,7 @@
     "name": "com.hex.hexun.input",
     "version": "1.0.1",
     "displayName": "HexUN-Input",
-    "description": "Framework classes for the HexUN Unity input process",
+    "description": "Structure and patterns for recieving input in hex unity projects",
     "unity": "2019.4",
     "unityRelease": "0f1",
     "dependencies": {},

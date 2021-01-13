@@ -1,5 +1,5 @@
 # HexUN
-Framework classes for the HexUN Unity input process
+Structure and patterns for recieving input in hex unity projects
 
 ### Installation
 To add this to your project make sure the following is in your package.json

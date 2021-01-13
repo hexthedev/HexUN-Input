@@ -1,12 +1,18 @@
 # HexUN
-Structure and patterns for recieving input in hex unity projects
+Framework classes for the HexUN Unity input process
 
-**Current State**: Iterating quickly, not yet stable
+### Installation
+To add this to your project make sure the following is in your package.json
 
-## Dependencies
-HexUN depends on the following HexCS libraries:
-* HexCS
-* #Updates to come#
-
-## How to use
-HexUN is designed to function as a git dependency using git submodules. #more info to come#
+```json
+{
+    "dependencies" : 
+    {
+        "com.hex.hexcs" : "https://github.com/hexthedev/HexCS.git",
+        "com.hex.hexcs.data" : "https://github.com/hexthedev/HexCS-Data.git",
+        "com.hex.hexun" : "https://github.com/hexthedev/HexUN.git",
+        "com.hex.hexun.input" : "https://github.com/hexthedev/HexUN-Input.git",
+        "com.unity.inputsystem": "1.0.1",
+    }
+}
+```

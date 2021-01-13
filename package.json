@@ -1,0 +1,17 @@
+{
+    "name": "com.hex.hexun.input",
+    "version": "1.0.1",
+    "displayName": "HexUN-Input",
+    "description": "Framework classes for the HexUN Unity input process",
+    "unity": "2019.4",
+    "unityRelease": "0f1",
+    "dependencies": {},
+    "keywords": [
+        "HexUN"
+    ],
+    "author": {
+        "name": "James McCafferty",
+        "email": "jamesmccafferty@live.ca",
+        "url": "https://github.com/hexthedev/HexUN-Input"
+    }
+}

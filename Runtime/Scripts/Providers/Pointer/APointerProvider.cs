@@ -6,7 +6,7 @@ using UnityEngine;
 namespace HexUN.Input
 {
     /// <inheritdoc/>
-    public abstract class APointerProvider : MonoEnhanced, IPointerProvider
+    public abstract class APointerProvider : HexBehaviour, IPointerProvider
     {
         [Header("Emissions (APointerProvider)")]
         [SerializeField]

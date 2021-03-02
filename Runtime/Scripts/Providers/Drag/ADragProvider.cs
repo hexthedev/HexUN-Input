@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 namespace HexUN.Input
 {
-    public class ADragProvider : MonoEnhanced
+    public class ADragProvider : HexBehaviour
     {
         [Header("Emissions (ADragProvider)")]
         [SerializeField]

@@ -5,7 +5,7 @@ using UnityEngine;
 namespace HexUN.Input
 {
     /// <inheritdoc />
-    public abstract class AHoverableProvider : MonoEnhanced, IHoverableProvider
+    public abstract class AHoverableProvider : HexBehaviour, IHoverableProvider
     {
         [Header("Emissions")]
         [SerializeField]

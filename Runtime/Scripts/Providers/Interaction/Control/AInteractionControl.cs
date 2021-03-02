@@ -6,7 +6,7 @@ using UnityEngine;
 namespace HexUN.Input
 {
     /// <inheritdoc/>
-    public abstract class AInteractionControl : MonoEnhanced, IInteractionControl
+    public abstract class AInteractionControl : HexBehaviour, IInteractionControl
     {
         [Header("State (InteractionProvider)")]
         [SerializeField]

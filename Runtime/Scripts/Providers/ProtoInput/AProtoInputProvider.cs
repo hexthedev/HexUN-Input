@@ -10,7 +10,7 @@ namespace HexUN.Input
     /// <summary>
     /// Abstract base class for providing proto input commands
     /// </summary>
-    public abstract class AProtoInputProvider : MonoEnhanced, IProtoInputProvider
+    public abstract class AProtoInputProvider : HexBehaviour, IProtoInputProvider
     {
         [Header("Emissions (AProtoInputProvider)")]
         [SerializeField]

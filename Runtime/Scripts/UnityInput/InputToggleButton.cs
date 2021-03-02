@@ -10,7 +10,7 @@ namespace HexUN.Input
     /// <summary>
     /// Represents a button that can be toggled on an off. Handled interpretation of button context from the input system
     /// </summary>
-    public class InputToggleButton : MonoEnhanced
+    public class InputToggleButton : HexBehaviour
     {
         [Header("Emissions")]
         [SerializeField]

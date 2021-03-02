@@ -10,7 +10,7 @@ namespace HexUN.Pawn
     /// <summary>
     /// Drives the physics of a 2D pawn
     /// </summary>
-    public abstract class APhysicsPawn2DViewRb : MonoDependent
+    public abstract class APhysicsPawn2DViewRb : DependentBehaviour
     {
         [Header("Dependencies (PhysicsPawnViewRb2D)")]
         [SerializeField]

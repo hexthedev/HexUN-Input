@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace HexUN.Input
 {
-    public abstract class AClickInteractor : MonoEnhanced, IInteractionProvider, IClickProvider
+    public abstract class AClickInteractor : HexBehaviour, IInteractionProvider, IClickProvider
     {
         [Header("Dependencies (ClickInteractor)")]
         [SerializeField]

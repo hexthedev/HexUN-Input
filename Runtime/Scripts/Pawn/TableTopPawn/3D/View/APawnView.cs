@@ -8,7 +8,7 @@ namespace HexUN.Systems.Grid
     /// <summary>
     /// Uses Hoverable events and PawnModel events to determine the visualization of the pawn
     /// </summary>
-    public abstract class APawnView : MonoEnhanced
+    public abstract class APawnView : HexBehaviour
     {
         [Header("Dependencies (PawnView)")]
         [SerializeField]

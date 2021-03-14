@@ -1,5 +1,5 @@
 ﻿using HexUN.Deps;
-using HexUN.MonoB;
+using HexUN.Behaviour;
 using HexUN.Input;
 using UnityEngine;
 

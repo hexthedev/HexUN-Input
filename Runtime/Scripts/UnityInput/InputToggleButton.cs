@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using HexUN.Events;
-using HexUN.MonoB;
+using HexUN.Behaviour;
 using UnityEngine;
 using static UnityEngine.InputSystem.InputAction;
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using HexCS.Core;
 using HexUN.Events;
-using HexUN.MonoB;
+using HexUN.Behaviour;
 using UnityEngine;
 
 namespace HexUN.Input

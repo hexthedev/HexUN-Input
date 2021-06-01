@@ -67,7 +67,7 @@ namespace HexUN.Systems.Grid
         }
         #endregion
 
-        protected override void MonoStart()
+        protected override void HexStart()
         {
             ResolveStates();
         }

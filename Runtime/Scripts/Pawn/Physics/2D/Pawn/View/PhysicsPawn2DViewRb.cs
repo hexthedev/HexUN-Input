@@ -106,5 +106,19 @@ namespace HexUN.Pawn
             _resetVelocity = true;
             _isVelocityForced = false;
         }
+
+
+        // ISSUE:
+        // These arn't implemented because the scene behaviour callbacks were introduced. 
+        // Scene behaviour might need more dev to get right. 
+        protected override void SceneInitalize()
+        {
+
+        }
+
+        protected override void SceneDenitialize()
+        {
+
+        }
     }
 }

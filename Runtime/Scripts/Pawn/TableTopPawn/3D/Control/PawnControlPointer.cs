@@ -13,7 +13,7 @@ namespace HexUN.Systems.Grid
 
         protected IPointerProvider PointerProivder;
 
-        protected override void MonoAwake()
+        protected override void HexAwake()
         {
             ResolveDependencies();
             EventBindings.Add(PointerProivder.OnPointer.Subscribe(HandlePointerEvent));

@@ -33,7 +33,7 @@ namespace HexUN.Input
 
         #region Protected API
 
-        protected override void MonoAwake()
+        protected override void HexAwake()
         {
             EventBindings.Add(OnPointerEvent.Subscribe(HandlePointerEvent));
         }

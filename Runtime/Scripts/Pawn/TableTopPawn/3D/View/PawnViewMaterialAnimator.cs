@@ -38,7 +38,7 @@ namespace HexUN.Systems.Grid
         private bool _isMaterialChangedSinceLastFrame = false;
         private bool _isAnimatorChangedSinceLastFrame = false;
 
-        protected override void MonoAwake()
+        protected override void HexAwake()
         {
             ResolveGameColorReferences();
         }

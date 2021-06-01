@@ -15,7 +15,7 @@ namespace HexUN.Input
         [SerializeField]
         private EHoverableEvent _lastHoverableEvent = EHoverableEvent.Absent;
 
-        protected override void MonoAwake()
+        protected override void HexAwake()
         {
             EventBindings.Add(HoverableEvent.Subscribe(HandleHoverableEvent));
         }

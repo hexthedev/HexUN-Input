@@ -16,9 +16,9 @@ namespace HexUN.Input.Hoverable
         private bool _isPointerOver = false;
 
         /// <inheritdoc />
-        protected override void MonoAwake()
+        protected override void HexAwake()
         {
-            base.MonoAwake();
+            base.HexAwake();
             ResolveDependencies();
             if (_pointerProvider != null) EventBindings.Add(_pointerProvider.OnPointer.Subscribe(HandlePointerEvent));
         }

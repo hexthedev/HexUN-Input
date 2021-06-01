@@ -45,7 +45,7 @@ namespace HexUN.Input
         protected abstract void HandleInteractionStateChange(bool state);
 
         /// <inheritdoc />
-        protected override void MonoStart()
+        protected override void HexStart()
         {
             CallAfterStart(o => SetInteractable(Interactable));
         }

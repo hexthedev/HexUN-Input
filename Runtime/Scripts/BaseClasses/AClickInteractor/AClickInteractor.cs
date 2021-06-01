@@ -41,13 +41,13 @@ namespace HexUN.Input
         public IEventSubscriber OnClick => _onClick;
         #endregion
 
-        protected override void MonoAwake()
+        protected override void HexAwake()
         {
             ResolveDependencies();
             CallAfterAwake((o) => EventBindings.Add(InteractionProvider.OnInteractionState.Subscribe(HandleInteractionState)));
         }
 
-        protected override void MonoStart()
+        protected override void HexStart()
         {
             SetInteractable(_interactable);
         }

@@ -33,7 +33,7 @@ namespace HexUN.Systems.Grid
         protected IPawnControl PawnControl;
         protected IHoverableProvider HoverableProvider;
 
-        protected override void MonoAwake()
+        protected override void HexAwake()
         {
             ResolveDependencies();
             EventBindings.Add(PawnControl.OnPawnState.Subscribe(HandlePawnState));
